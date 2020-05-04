@@ -1,0 +1,208 @@
+html {
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr; 
+    background-image: url(images/troy.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: scroll;
+}
+
+body {
+    grid-column: 2/3;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+.heading {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.heading h1 {
+    font-size: 2.5vw;
+    font-weight: 1000;
+}
+.heading h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-size: 1.2vw;
+}
+.menu h3 {
+    opacity: 0.5;
+}
+.menu .current {
+    opacity: 1;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+                                                        /* Main  */
+
+.content {
+    padding-top: 20px;
+}
+.subjects {
+    padding-top: 2em;
+} 
+article h1 {
+    letter-spacing: 3px;
+}
+hr {
+    border-top: 1px solid black;
+}
+iframe {
+    padding: 2em 2em 2em 2em;
+    width: 50vw;
+    height: 25vw;
+}
+.discription {
+    text-align: justify;
+    font-size: 1.3vw;
+}
+
+/* "ABOUT" Specific */
+
+.bio {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: auto;
+}
+.bio h1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 1.5vw;
+}
+.bio p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 1.2vw;
+    text-align: justify;
+}
+.left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.image-caption {
+    display: grid;
+    grid-row: 2fr 1fr;
+}
+.image {
+    grid-row: 1/2;
+    width: 15vw;
+    height: auto;
+    padding-right: 30px;
+}
+figcaption {
+    padding-top: 10px;
+    grid-row: 2/3;
+    font-size: 1vw;
+    width: 15vw;
+
+}
+
+/* "CONTACT" Specific */
+
+.logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
+/* Mobile Re-Scaling */
+
+@media screen and (max-width: 1024px) {
+    html {
+        display: grid; 
+        grid-template-columns: 0.4fr 2fr 0.4fr;
+        grid-template-rows: 1fr; 
+    }
+    .heading h1 {
+        font-size: 5vw;
+    }
+    .menu {
+        font-size: 2vw;;
+    }
+    .discription {
+        text-align: justify;
+        font-size: 2vw;
+    }
+    .bio h1 {
+        font-size: 2vw;
+    }
+    .bio p {
+        font-size: 2vw;
+    }
+    .image {
+        width: 20vw;
+    }
+    figcaption {
+        padding-top: 1vw;
+        width: 20vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        display: grid; 
+        grid-template-columns: 0.4fr 2fr 0.4fr;
+        grid-template-rows: 1fr; 
+    }
+    .heading h1 {
+        font-size: 5vw;
+    }
+    .menu {
+        font-size: 2vw;;
+    }
+    .discription {
+        text-align: justify;
+        font-size: 2.3vw;
+    }
+    .bio h1 {
+        font-size: 2.3vw;
+    }
+    .bio p {
+        font-size: 1.9vw;
+    }
+    .image {
+        width: 30vw;
+    }
+    figcaption {
+        padding-top: 1vw;
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 425px) {
+    html {
+        display: grid; 
+        grid-template-columns: 0.2fr 2fr 0.2fr;
+        grid-template-rows: 1fr; 
+    }
+    .heading h1 {
+        font-size: 5vw;
+    }
+    .menu {
+        font-size: 2vw;;
+    }
+    .discription {
+        text-align: justify;
+        font-size: 3.8vw;
+    }
+    .bio h1 {
+        font-size: 2vw;
+    }
+    .bio p {
+        font-size: 3.8vw;
+    }
+}
